@@ -76,9 +76,6 @@ h1 {
   text-align: center;
 }
 h2 {
-  /* font-family: cursive; */
-  /* letter-spacing: 2px; */
-  /* font-style: italic; */
   font-weight: 300;
   font-size: 1.5rem;
   text-align: center;
@@ -177,7 +174,7 @@ footer a {
   color: antiquewhite;
 }
 @media only screen and (max-width: 400px) {
-  h1#name {
+  h1 {
     font-size: 10vw;
   }
 }
