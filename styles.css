@@ -4,23 +4,28 @@
   box-sizing: border-box;
   font-family: Montserrat;
 }
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
   }
 }
+
 body,
 section {
   min-height: 100vh;
   background-color: rgb(0, 0, 0);
   color: white;
 }
+
 section {
   padding: 80px 10px 40px 10px;
 }
+
 section#bio {
   background-color: rgb(17, 17, 17);
 }
+
 nav {
   min-height: 40px;
   position: fixed;
@@ -35,9 +40,11 @@ nav {
   overflow: hidden;
   z-index: 999;
 }
+
 a {
   text-decoration: none;
 }
+
 nav a {
   font-size: 1rem;
   color: black;
@@ -45,13 +52,16 @@ nav a {
   text-align: center;
   border-right: 1px solid gray;
 }
+
 nav a:last-of-type {
   border: none;
   color: rgb(255, 0, 0);
 }
+
 nav a:hover {
   color: rgb(255, 0, 0);
 }
+
 section#home {
   display: flex;
   flex-wrap: wrap;
@@ -60,50 +70,60 @@ section#home {
   justify-content: space-around;
   align-items: center;
 }
+
 #image {
   display: block;
   max-width: 100%;
   height: auto;
   max-height: 500px;
 }
+
 aside {
   color: white;
   text-align: center;
   max-width: 600px;
 }
+
 h1 {
   font-size: 3rem;
   text-align: center;
 }
+
 h2 {
   font-weight: 300;
   font-size: 1.5rem;
   text-align: center;
   color: rgb(211, 176, 100);
 }
+
 p {
   font-size: 1.5rem;
 }
+
 h1,
 h2,
 p {
   margin-bottom: 40px;
 }
+
 .text {
   margin-top: 10px;
   font-size: 1.1rem;
   line-height: 2rem;
 }
+
 #home .text {
   display: block;
   margin-top: 10px;
 }
+
 .quote {
   font-size: 3rem;
   line-height: 1.5rem;
   font-family: cursive;
   color: rgb(255, 0, 0);
 }
+
 button {
   all: unset;
   height: 40px;
@@ -114,29 +134,37 @@ button {
   cursor: pointer;
   transition: 0.1s;
 }
+
 button:hover {
   background-color: white;
   color: black;
 }
+
 .arrow {
   opacity: 0;
   height: 10px;
   margin-left: -10px;
   transition: 0.2s ease;
 }
-button:hover > .arrow {
+
+button:hover>.arrow {
   opacity: 1;
   margin-left: 10px;
 }
+
 #bio .text,
-#bio h2 {
+#bio h2,
+#music .text,
+#music h2 {
   margin-inline: auto;
   width: 800px;
   max-width: 80vw;
 }
+
 .cursive {
   font-family: cursive;
 }
+
 .paintings {
   position: relative;
   margin-top: 60px;
@@ -147,32 +175,40 @@ button:hover > .arrow {
   justify-content: center;
   z-index: 10;
 }
+
 .paintings img {
   height: 400px;
   cursor: pointer;
   transition: 0.3s ease;
 }
+
 .paintings img:hover {
   transform: translate(0, -25px);
 }
+
 figcaption {
   text-align: center;
 }
+
 .paintings figcaption {
   margin-top: -25px;
   opacity: 0;
 }
-.paintings img:hover ~ figcaption {
+
+.paintings img:hover~figcaption {
   opacity: 1;
 }
+
 footer {
   border-top: 1px solid #ffffff20;
   padding: 10px;
   text-align: center;
 }
+
 footer a {
   color: antiquewhite;
 }
+
 @media only screen and (max-width: 400px) {
   h1 {
     font-size: 10vw;
